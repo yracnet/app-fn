@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm">
+    <jpa:entity class="CapCotizacion" id="_1548606676408730">
+        <jpa:table name="CAP_COTIZACION"/>
+        <jpa:attributes>
+            <jpa:id name="cotizacionId" attribute-type="Long">
+                <jpa:column name="ID_COTIZACION" unique="false" nullable="false" insertable="true" updatable="true"/>
+                <jpa:generated-value strategy="TABLE" generator="CAP_COTIZACIONES"/>
+                <jpa:table-generator name="CAP_COTIZACIONES" table="CAP_SEQUENCE" schema="CAP"/>
+            </jpa:id>
+            <jpa:basic name="tipo" optional="false" attribute-type="String">
+                <jpa:column name="TIPO_REGISTRO" unique="false" nullable="false" insertable="true" updatable="false" length="255"/>
+            </jpa:basic>
+            <jpa:basic name="estado" optional="false" attribute-type="String">
+                <jpa:column name="ESTADO" unique="false" nullable="false" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+            <jpa:basic name="fecha" optional="false" attribute-type="java.util.Date">
+                <jpa:column name="FECHA_COTIZACION" unique="false" nullable="false" insertable="true" updatable="false"/>
+                <jpa:temporal>DATE</jpa:temporal>
+            </jpa:basic>
+            <jpa:basic name="valorUfv" optional="false" attribute-type="Double">
+                <jpa:column name="VALOR_UFV" unique="false" nullable="false" insertable="true" updatable="false" precision="5"/>
+            </jpa:basic>
+            <jpa:basic name="valorInteres" optional="false" attribute-type="Double">
+                <jpa:column name="VALOR_INTERES" unique="false" nullable="false" insertable="true" updatable="false" precision="5"/>
+            </jpa:basic>
+            <jpa:basic name="createdBy" attribute-type="String">
+                <jpa:column name="CREATED_BY" unique="false" nullable="false" insertable="true" updatable="false" length="15"/>
+            </jpa:basic>
+            <jpa:basic name="createdAt" attribute-type="java.util.Date">
+                <jpa:column name="CREATED_AT" unique="false" nullable="false" insertable="true" updatable="false"/>
+                <jpa:temporal>TIMESTAMP</jpa:temporal>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+</jpa:entity-mappings>
