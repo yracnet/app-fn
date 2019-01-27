@@ -7,10 +7,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>app-fn-lib</module>
-        <module>app-fn-serv</module>
-        <module>app-fn-impl</module>
-        <module>app-fn-local</module>
-        <module>app-fn-view</module>
+        <module>app-fn-manager</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
