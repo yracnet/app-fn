@@ -1,10 +1,25 @@
 {
     "access": null,
     "persistenceUnitMetadata": null,
-    "converter": [
+    "ppkg": "dev.yracnet.app",
+    "mappedSuperclass": [
         
     ],
-    "mappedSuperclass": [
+    "namedQuery": [
+        
+    ],
+    "namedNativeQuery": [
+        
+    ],
+    "sequenceGenerator": [
+        
+    ],
+    "namedStoredProcedureQuery": [
+        
+    ],
+    "catalog": null,
+    "epkg": "model",
+    "converter": [
         
     ],
     "entity": [
@@ -293,6 +308,7 @@
             "secondaryTable": [
                 
             ],
+            "pkg": "dev.yracnet.app.model",
             "sqlResultSetMapping": [
                 
             ],
@@ -312,19 +328,7 @@
     ],
     "schema": null,
     "version": "2.2",
-    "namedQuery": [
-        
-    ],
-    "namedNativeQuery": [
-        
-    ],
     "sqlResultSetMapping": [
-        
-    ],
-    "sequenceGenerator": [
-        
-    ],
-    "namedStoredProcedureQuery": [
         
     ],
     "description": null,
@@ -334,6 +338,5 @@
     "embeddable": [
         
     ],
-    "catalog": null,
     "package": null
 }

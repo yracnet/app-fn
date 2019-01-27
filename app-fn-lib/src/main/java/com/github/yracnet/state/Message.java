@@ -2,6 +2,7 @@ package com.github.yracnet.state;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -66,6 +67,18 @@ public class Message implements Serializable {
 
     public boolean isCauseEmpty() {
         return !causeList.isEmpty();
+    }
+
+    public void required(Filter filter, String cause) {
+        if(filter == null || filter.value == null){
+            addCause(cause);
+        }
+    }
+
+    public void required(Object value, String cause) {
+        if(value == null){
+            addCause(cause);
+        }
     }
 
 }
