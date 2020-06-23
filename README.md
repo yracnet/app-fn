@@ -1,3 +1,3 @@
-# jrr-lib
-Java Rest Response
-Is a common rest response from jee server using jax-rs
+# jwr-lib
+Java Web RestResponse
+Is a common structure response when you caller a rest service
