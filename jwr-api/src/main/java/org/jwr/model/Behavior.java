@@ -11,8 +11,17 @@ import java.util.Map;
 @lombok.ToString
 public class Behavior {
 
+    /**
+     * Type Behavior
+     */
     private String type;
+    /**
+     * Action
+     */
     private String action;
+    /**
+     * Parameters
+     */
     private final Map<String, String> params = new HashMap<>();
 
     public void addParam(String name, String value) {

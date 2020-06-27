@@ -8,5 +8,8 @@ package org.jwr.model;
 @lombok.ToString
 public class ResultIt<T> extends Result {
 
+    /**
+     * Object
+     */
     private T value;
 }

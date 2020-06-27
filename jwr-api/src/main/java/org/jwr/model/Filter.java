@@ -35,9 +35,17 @@ public class Filter<T> {
         }
 
     }
-
+    /**
+     * Expression Filter
+     */
     private Expr expr;
+    /**
+     * Value Filter
+     */
     private T value;
+    /**
+     * Other Value filter
+     */
     private T other;
 
     public Expr getExpr() {

@@ -9,5 +9,8 @@ import java.util.List;
 @lombok.Setter
 @lombok.ToString
 public class ResultList<T> extends Result{
+    /**
+     * List of Object
+     */
    private List<T> values;
 }

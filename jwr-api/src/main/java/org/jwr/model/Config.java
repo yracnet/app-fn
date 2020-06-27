@@ -14,11 +14,25 @@ public class Config {
         desc,
         none
     }
-
+/**
+ * Size Block Result
+ */
     private int size;
+    /**
+     * Index 
+     */
     private int index;
+    /**
+     * Max Length for index
+     */
     private int length;
+    /**
+     * Sort Attribute
+     */
     private String attr;
+    /**
+     * Sort Mode
+     */
     private Sort sort;
 
     public Config() {

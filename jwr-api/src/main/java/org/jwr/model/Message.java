@@ -10,6 +10,9 @@ import java.util.List;
 @lombok.Setter
 @lombok.ToString
 public class Message {
+    /**
+     * Level Message
+     */
     public static enum Level {
         none,
         info,
@@ -17,12 +20,33 @@ public class Message {
         error,
         fail
     }
+    /**
+     * Level Message
+     */
     private Level level = Level.none;
+    /**
+     * Code Message
+     */
     private String code;
+    /**
+     * Title Message
+     */
     private String title;
+    /**
+     * Description Message
+     */
     private String description;
+    /**
+     * Causes Message
+     */
     private final List<String> causes = new ArrayList<>();
+    /**
+     * Action Message
+     */
     private String action;
+    /**
+     * Trace Error
+     */
     private final List<String> traces = new ArrayList<>();
 
     public void addCause(boolean when, String value) {

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Basic Result Response for Request
  *
  * @author Willyams Yujra
  */
@@ -13,8 +14,17 @@ import java.util.List;
 @lombok.ToString
 public class Result implements Serializable {
 
+    /**
+     * Flag attribute for error result
+     */
     private boolean error = false;
+    /**
+     * List of Message
+     */
     private List<Message> messages = new ArrayList<>();
+    /**
+     * List of Behavior
+     */
     private List<Behavior> behaviors = new ArrayList<>();
 
     public void addMessage(Message message) {
