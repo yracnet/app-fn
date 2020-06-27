@@ -26,6 +26,13 @@ public class Result implements Serializable {
      * List of Behavior
      */
     private List<Behavior> behaviors = new ArrayList<>();
+    
+    public Result(){}
+    public Result(Result other){
+        error = other.error;
+        messages.addAll(other.messages);
+        behaviors.addAll(other.behaviors);
+    }
 
     public void addMessage(Message message) {
         messages.add(message);
@@ -33,5 +40,9 @@ public class Result implements Serializable {
 
     public void addBehavior(Behavior behavior) {
         behaviors.add(behavior);
+    }
+
+    public Result asResult() {
+        return new Result(this);
     }
 }
